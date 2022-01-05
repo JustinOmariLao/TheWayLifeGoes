@@ -9,7 +9,7 @@ class Demon extends Phaser.GameObjects.Sprite {
 
     update() {
         // move left
-        this.x -= 3;
+        this.x -= 2;
         // wraparound from left to right edge
         if (this.x <= 0-this.width) {
             this.reset();

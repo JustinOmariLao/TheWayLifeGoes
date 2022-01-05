@@ -160,7 +160,7 @@ class Game1 extends Phaser.Scene {
         score = 20;
         this.allCoins = false;
 
-        txt = this.add.text(680, 15, 'Lives: ' + lives, this.menuConfig1);
+        txt = this.add.text(680, 15, 'Health: ' + lives, this.menuConfig1);
         txt.setScrollFactor(0);
 
         objTxt = this.add.text(10, 15, 'Obtain Coins to get the Girl: ' + score + ' /40', this.menuConfig1);
@@ -224,12 +224,12 @@ class Game1 extends Phaser.Scene {
             // check collisions
             if(this.checkCollision(player, this.heartAttack)) {
                 lives--;
-                txt.setText('Lives:' + lives);
+                txt.setText('Health:' + lives);
                 this.heartAttack.reset();
             }
             if(this.checkCollision(player, demon)) {
                 lives--;
-                txt.setText('Lives:' + lives);
+                txt.setText('Health:' + lives);
                 demon.reset();
             }
         }

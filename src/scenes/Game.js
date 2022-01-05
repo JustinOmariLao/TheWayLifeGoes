@@ -230,12 +230,12 @@ class Game extends Phaser.Scene {
             // check collisions
             if(this.checkCollision(player, this.heartAttack)) {
                 lives--;
-                txt.setText('Lives: ' + lives);
+                txt.setText('Health: ' + lives);
                 this.heartAttack.reset();
             }
             if(this.checkCollision(player, demon)) {
                 lives--;
-                txt.setText('Lives: ' + lives);
+                txt.setText('Health: ' + lives);
                 demon.reset();
             }
         }
