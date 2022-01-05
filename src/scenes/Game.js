@@ -166,7 +166,7 @@ class Game extends Phaser.Scene {
 
         this.allCoins = false;
 
-        txt = this.add.text(680, 15, 'Lives: ' + lives, this.menuConfig1);
+        txt = this.add.text(680, 15, 'Health: ' + lives, this.menuConfig1);
         txt.setScrollFactor(0);
 
         objTxt = this.add.text(10, 15, 'Obtain Coins to get the Girl: ' + score + ' /40', this.menuConfig1);
